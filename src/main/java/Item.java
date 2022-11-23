@@ -28,8 +28,6 @@ public class Item extends Thread {
             name = "values"
     )
     private int values;
-    @Version
-    long version;
 
     public Item() {
     }
@@ -52,13 +50,5 @@ public class Item extends Thread {
 
     public void setValues(int values) {
         this.values = values;
-    }
-
-    public long getVersion() {
-        return this.version;
-    }
-
-    public void setVersion(long version) {
-        this.version = version;
     }
 }
